@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-
+import '../top-card-list.css'
 
 const cardListData = [
     {
@@ -8,28 +8,32 @@ const cardListData = [
         username: '@Jonathan',
         followers: '1483',
         todayFollowers: 12,
-        icon: './images/up.png'
+        icon: './images/fb.png',
+        name: 'facebook'
     },
     {
         id: 2,
         username: '@Ramiro',
         followers: '28k',
         todayFollowers: 20,
-        icon: './images/tw.png'
+        icon: './images/tw.png',
+        name: 'twitter'
     },
     {
         id: 3,
         username: '@Yesenia',
         followers: '6k',
         todayFollowers: 30,
-        icon: './images/yt.png'
+        icon: './images/yt.png',
+        name: 'instagram'
     },
     {
         id: 4,
         username: '@Iliana',
         followers: '12k',
         todayFollowers: -50,
-        icon: './images/ig.png'
+        icon: './images/ig.png',
+        name: 'youtube'
     }
 ]
 
