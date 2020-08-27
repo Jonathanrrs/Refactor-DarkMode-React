@@ -1,0 +1,21 @@
+.header {
+    background: var(--lightGray);
+    padding-bottom: 100px;
+    border-radius:  0 0 20px 20px;
+    padding-top: 2em;
+    
+  }
+  
+  .header-total {
+    color: var(--lightGray);
+    margin: .5em 0;
+    font-weight: 600;
+    border-bottom: 1px solid var(--gray);
+    /* border-bottom: 2px solid red; */
+    padding-bottom: 1.5em;
+  }  
+  
+  h1 {
+    margin: 0;
+    font-size: 1.7em;
+  }
