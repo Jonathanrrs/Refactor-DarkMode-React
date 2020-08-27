@@ -1,66 +1,47 @@
 import React from 'react';
+import Card from './Card';
+
+
+const cardListData = [
+    {
+        id: 1,
+        username: '@Jonathan',
+        followers: '1483',
+        todayFollowers: 12,
+        icon: './images/up.png'
+    },
+    {
+        id: 2,
+        username: '@Ramiro',
+        followers: '28k',
+        todayFollowers: 20,
+        icon: './images/tw.png'
+    },
+    {
+        id: 3,
+        username: '@Yesenia',
+        followers: '6k',
+        todayFollowers: 30,
+        icon: './images/yt.png'
+    },
+    {
+        id: 4,
+        username: '@Iliana',
+        followers: '12k',
+        todayFollowers: -50,
+        icon: './images/ig.png'
+    }
+]
+
 
 function TopCardlist() {
     return (
         <section className="top-cards">
             <div className="wrapper">
                 <div className="grid">
-                    <article className="card facebook">
-                        <p className="card-title">
-                            <img src="./images/fb.png"></img>
-                        @jonathan
-                    </p>
-                        <p className="card-followers">
-                            <span className="card-followers-number">6k</span>
-                            <span className="card-followers-title">Followers</span>
-                        </p>
-                        <p className="card-today">
-                            <img src="./images/up.png"></img>
-                        12 Today
-                    </p>
-                    </article>
-                    <article className="card twitter">
-                        <p className="card-title">
-                            <img src="./images/tw.png"></img>
-                        @jonathan
-                    </p>
-                        <p className="card-followers">
-                            <span className="card-followers-number">28k</span>
-                            <span className="card-followers-title">Followers</span>
-                        </p>
-                        <p className="card-today">
-                            <img src="./images/up.png"></img>
-                        12 Today
-                    </p>
-                    </article>
-                    <article className="card instagram">
-                        <p className="card-title">
-                            <img src="./images/ig.png"></img>
-                        @jonathan
-                    </p>
-                        <p className="card-followers">
-                            <span className="card-followers-number">11k</span>
-                            <span className="card-followers-title">Followers</span>
-                        </p>
-                        <p className="card-today">
-                            <img src="./images/up.png"></img>
-                        12 Today
-                    </p>
-                    </article>
-                    <article className="card youtube">
-                        <p className="card-title">
-                            <img src="./images/yt.png"></img>
-                        @jonathan
-                    </p>
-                        <p className="card-followers">
-                            <span className="card-followers-number">12k</span>
-                            <span className="card-followers-title">Followers</span>
-                        </p>
-                        <p className="card-today">
-                            <img src="./images/up.png"></img>
-                        12 Today
-                    </p>
-                    </article>
+                    {
+                        cardListData.map((cardData) => <Card key={cardData.id} {...cardData} /* spread operator */ />)
+                    }
                 </div>
             </div>
         </section>

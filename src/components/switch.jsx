@@ -1,4 +1,5 @@
 import React from 'react';
+import '../switch.css'
 function Switch() {
     return (
         <div className="dark-mode">
