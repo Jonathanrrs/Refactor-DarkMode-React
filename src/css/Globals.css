@@ -1,14 +1,14 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+}
+main {
     color: var(--baseColor);
     background: var(--baseBackground);
 }
-
 :root {
     --lime-green: hsl(163, 72%, 41%);
     --brigth-red : hsl(356, 69%, 56%);
-  
     --facebook: #168ef4;
     --twitter: hsl(203, 89%, 53%);
     --instagram-1: hsl(37, 97%, 78%);
@@ -22,9 +22,7 @@ body {
     --baseColor: #1d2029;
     --switchSpinner: white;
     --switch : #5f616d;
-  
 }
-
 .wrapper {
     padding: 0 30px;
 }
@@ -32,7 +30,6 @@ body {
     display: grid;
     grid-row-gap: 25px;
 }
-
 @media screen and (min-width: 480px) {
     .grid {
         grid-template-columns: 1fr 1fr;
@@ -42,27 +39,19 @@ body {
         max-width: 1440px;
         margin:auto
     }
-    
-  }
-  
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
-        
     }
   }
-
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .header-grid {
-       /*  display: grid;
-        grid-template-columns: 1fr 200px; */
-    }
-  }
+}
 
-  .is-dark-mode {
+.is-dark-mode {
     --cardGray: #252b43;
     --baseBackground:#1d2029;
     --baseColor: white;
@@ -71,9 +60,7 @@ body {
     --cardTitle: #8088ad;
     --switchSpinner: #282943;
     --switch:  linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
-    
 }
-
 .is-light-mode {
 --gray: #5f616d;
 --cardGray: #f0f3fa;
@@ -82,9 +69,8 @@ body {
 --baseBackground: white;
 --baseColor: #1d2029;
 --switchSpinner: white;
---switch: #5f616d,
+--switch: gray;
 }
-
 @media (prefers-color-scheme: dark) {
 :root {
     --cardGray: #252b43;
@@ -95,14 +81,10 @@ body {
     --cardTitle: #8088ad;
     --switchSpinner: #282943;
     --switch:  linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
-    
-    
+    }
 }
- 
-}
-
 h2 {
     color: var(--gray);
-  }
+}
 
  

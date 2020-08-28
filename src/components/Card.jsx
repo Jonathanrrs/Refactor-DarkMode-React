@@ -1,5 +1,5 @@
 import React from 'react';
-import '../card.css';
+import '../css/card.css';
 
 function Card({username, followers, todayFollowers, icon, name}) {
     const cardClass = `card ${name}`;

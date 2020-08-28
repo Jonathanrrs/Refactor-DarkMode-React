@@ -1,6 +1,6 @@
 import React from 'react';
 import CardSmall from './Card-small';
-import '../overview.css'
+import '../css/overview.css'
 
 const cardSmallList = [
     {   
